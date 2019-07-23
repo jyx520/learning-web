@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 
+        表单标签: input 单标签
+        type 表单的类型
+        type="text" 单行文本输入框
+        type="password"  密码输入框
+        type="radio" 单选框 从多个选择里面选择具体的某一个
+        要想单选框生效, 必须具备相同的name 属性
+        type="checkbox"  多选框 可以选择一个或者多个
+        type="file" 上传文件
+        
+
+        select 下拉框 配合option
+        textarea 文本域 多行文本输入框
+
+        value属性: 代表表单里面包含的值 radio checkbox 需要添加
+        checked 默认选中项 针对的是radio和checkbox 
+        selected 默认选中项 针对的是select 
+     -->
+
+     <h1>征婚网站</h1>
+     用户名: <input type="text" name="" id="" value="请输入用户名">
+     <br>
+     <br>
+     <br>
+     密码: <input type="password" name="" id="">
+     <br>
+     <br>
+     <br>
+     性别: <input type="radio" checked name="gender" id="" value="男" >男
+     <input type="radio"  name="gender" id="" value="女">女
+     <input type="radio" name="gender" id="" value="保密" name="保密">保密
+     <br>
+     <br>
+     <br>
+     爱好: <input type="checkbox" checked value="骑行" name="" id="">骑行
+     <input type="checkbox" name="" value="旅游" id="">旅游
+     <input type="checkbox" name="" value="学习" id="">学习
+     <input type="checkbox" name="" value="唱歌" id="">唱歌
+     <br>
+     <br>
+     <br>
+
+     上传图片:<input type="file" name="" id="">
+     <br>
+     <br>
+     <br>
+
+     籍贯:
+        <select name="" id="">
+            <option value="上海">上海</option>
+            <option value="北京">北京</option>
+            <option value="江西" selected>江西</option>
+            <option value="安徽">安徽</option>
+            <option value="江苏">江苏</option>
+            <option value="浙江">浙江</option>
+            <option value="河南">河南</option>
+            <option value="黑龙江">黑龙江</option>
+        </select>
+
+        <select name="" id="">
+            <option value="上海">上海</option>
+            <option value="北京">北京</option>
+            <option value="江西">江西</option>
+            <option value="安徽">安徽</option>
+            <option value="江苏">江苏</option>
+            <option value="浙江">浙江</option>
+            <option value="河南">河南</option>
+            <option value="黑龙江">黑龙江</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        请介绍自己 字数100-200: <textarea name="" id="" style="width: 300px;height: 300px"></textarea>
+        <!-- 普通按钮 -->
+        <input type="button" value="按钮">
+        <button>按钮</button>
+
+        <!-- 提交按钮 -->
+        <input type="submit">
+        
+</body>
+</html>

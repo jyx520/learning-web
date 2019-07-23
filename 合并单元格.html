@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合并单元格</title>
+</head>
+<body>
+    <!-- 
+        单元格的合并:
+        跨行合并 rowspan (属性) 上下合并 写在上面的单元格上 合并几个值就是几  
+        一旦合并了 那么多余的那个单元格需要干掉
+
+        跨列合并 colspan (属性) 左右合并 写在左边的单元格上 合并几个值就是几
+        一旦合并了 那么多余的那个单元格需要干掉
+     -->
+
+     <table border="1" cellspacing="0" cellpadding="0"
+     align="center" width="800" height="800">
+     <caption>成绩管理系统</caption>
+     <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>成绩</th>
+        </tr>
+     </thead>
+        
+         <tr>
+             <td>芳芳</td>
+             <td>女</td>
+             <td rowspan="3">18</td>
+             <td rowspan="2">100</td>
+         </tr>
+         <tr>
+             <td>飞飞</td>
+             <td rowspan="2">男</td>
+             <!-- <td>18</td> -->
+             <!-- <td>95</td> -->
+         </tr>
+         <tr>
+             <td>班长</td>
+             <!-- <td>男</td> -->
+             <!-- <td>18</td> -->
+             <td>99</td>
+         </tr>
+
+         <tr>
+             <td>备注:</td>
+             <td colspan="3"> 飞飞进步了</td>
+         </tr>
+     </table>
+</body>
+</html>
