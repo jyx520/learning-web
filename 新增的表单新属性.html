@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增的表单新属性</title>
+</head>
+<body>
+<form action="demo.php">
+    <input type="text" name="" id="" value="请输入用户名">
+    <!-- 
+        placeholder 属性 占位文本 用来提示用户当前表单应该输入的内容
+        和value 有本质的不同, value 是表单包含的值 会被提交给后台
+        而placeholder 里面的值永远不会提交 
+     -->
+
+    <!-- autofocus 自动获取焦点 -->
+     <input type="text" name="" id="" autofocus>
+
+     <!-- 
+         自动补全功能 前提是该字段必须成功提交过一次
+         on 是默认值 自动开启该功能 off 关闭该功能
+      -->
+
+      <input type="text" autocomplete="on"  name="username" id="">
+
+      <!-- 自动验证表单不能为空 required -->
+      <input type="text" name="" id="" required>
+      <input type="submit">
+</form>
+</body>
+</html>

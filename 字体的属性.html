@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体的属性</title>
+    <!-- 
+        px 是一个单位 代表屏幕上的像素
+
+        font-family 设置不同的字体
+        默认是微软雅黑
+        注意事项:
+        a. 中文字体需要添加引号 英文可以不用
+        但是如果英文字体有空格或者其他特殊字符$ 也需要添加引号
+        b. 字体可以设置多个 中间用逗号隔开
+            浏览器解析原则:
+                从左往右 依次解析
+                如果当前的电脑识别这个字体 则直接使用, 后续不管
+                如果不能识别 继续找下一个字体 如果还是不能识别 则会使用默认的字体
+        c. 不建议使用一些偏门的字体
+     -->
+
+     <style>
+         h1 {
+             font-size: 100px;
+             font-family: SimSum, "\5B8B\4F53"
+         }
+
+         /* 
+         font-weight 控制文字粗细
+
+         bormal 不加粗
+         bold 加粗
+         bolder
+
+         100 - 900
+
+         100 
+
+         400 normal
+         700 bold
+         
+          */
+
+          p {
+              font-weight: 900;
+          }
+
+        /* 
+         font-style 控制文字样式 (风格)
+         normal 正常
+         italic 倾斜
+         */
+          span {
+              font-style: italic;
+          }
+     </style>
+</head>
+<body>
+    <h1>今天星期四</h1>
+    <p>我很开心</p>
+    <span>666666</span>
+</body>
+</html>
