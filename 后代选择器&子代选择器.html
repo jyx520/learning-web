@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后代选择器&子代选择器</title>
+    <style>
+    /* 
+    后代选择器:
+    选择器1  空格 选择器2
+    两个选择器满足后代关系
+     */
+
+     /* 
+     子代选择器:
+     选择器1 > 选择器2
+     两个元素之间必须满足子父级关系
+      */
+
+      /* .father > .son {
+          color: pink;
+      } */
+
+      .laowang > .son {
+          color: red;
+      }
+    
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="uncle">
+            <div class="son">儿子</div>
+        </div>
+    </div>
+
+    <div class="laowang">
+        <div class="laoli">
+            <div class="son"></div>
+        </div>
+    </div>
+</body>
+</html>

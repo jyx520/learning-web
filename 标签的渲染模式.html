@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标签的渲染模式</title>
+    <style>
+     div {
+         height: 200px;
+         background-color: red;
+     }
+
+     span {
+         width: 100px;
+         height: 100px;
+         background-color: lime;
+     }
+
+     img {
+         width: 600px;
+     }
+
+     input {
+         height: 100px;
+     }
+    </style>
+</head>
+<body>
+    <!-- 块级标签: div p h1-h6 ol ul li dl dt dd header footer nav aside article section
+    特点:
+        1. 可以直接写宽高
+        2. 独占一行
+        3. 默认宽度是父级标签的宽度
+        4. 一般用于作为容器布局 可以嵌套其他块级元素或者行内元素(p标签不要包裹其他块级元素 )    
+    -->
+
+    <!-- 行内元素: span a strong ins b del s u i em 
+    特点:
+        1. 宽高对于行内元素没有作用
+        2. 可以允许其他行内元素排成一排
+        3. 内容有多大就撑多大 如果没有内容 那么没有大小
+        4. 一般用来包裹文字或者做一些小的装饰(行内标签不要嵌套块级标签 a标签除外)
+    -->
+
+    <!-- 行内块元素: img input  -->
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <p>文</p>
+        <div></div>
+        <p>字</p>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <a href="#">呵呵哒</a>
+        <a href="#">么么哒</a>
+        <img src="mienv.jpg" alt=""> 用户名:
+        <input type="text">
+</body>
+</html>

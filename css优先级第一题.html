@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>权重精华题1</title>
+    <style>
+        #father #son { /*  0,2,0,0    */
+            color: yellow
+        }
+
+        #father p.c2{/* 1,1,1,0   */
+            color: black;
+        }
+
+        div.c1 p.c2{ /* 0,0,2,2   */
+            color: red;
+        }
+
+        #father {
+            color: green !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+css优先级规则：
+
+　　　1.css选择规则的权值不同时，权值高的优先；
+
+　　　2.css选择规则的权值相同时，后定义的规则优先；
+
+　　　3. css属性后面加 !important 时，无条件绝对优先；
+
+权值等级划分， 一般来说是划分4个等级：
+
+　　　　第一等级：代表 内联样式，如 style=""，权值为 1,0,0,0；
+
+　　　　第二等级：代表 ID选择器，如 #id="", 权值为 0,1,0,0；
+
+　　　　第三等级：代表 calss | 伪类 | 属性 选择器，如 .class | :hover,:link,:target | [type], 权值 0,0,1,0；
+
+　　　　第四等级：代表 标签 | 伪元素 选择器，如 p | ::after, ::before, ::fist-inline, ::selection, 权值 0,0,0,1；
+
+　　　　此外，通用选择器（*），子选择器（>）， 相邻同胞选择器（+）等选择器不在4等级之内，所以它们的权值都为 0,0,0,0；
+
+总结，这个比较规则就是三点
+
+　　　　1.先从高等级进行比较，高等级相同时，再比较低等级的，以此类推；
+
+　　　　2.完全相同的话，就采用 后者优先原则（也就是样式覆盖）；
+
+　　　　3.css属性后面加 !important 时，无条件绝对优先（比内联样式还要优先）；
+     -->
+    <div id="father" class="c1">
+        <p id="son" class="c2">试问这行字体是什么颜色的?</p>
+    </div>
+</body>
+</html>

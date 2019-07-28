@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景属性</title>
+    <style>
+    /*  背景颜色: background-color:  颜色; 
+        背景图片: background-image: url(路径);
+        背景平铺: background-repeat: no-repeat || repeat-x || repeat-y;
+        背景是否跟随滚动: background-attachment: scroll || fixed;
+        背景位置: background-position:
+        1. 方位名词 left right top bottom center 顺序不论
+        2. 像素 第一个值是X轴方向 第二个值是Y轴方向
+        程序的坐标系 水平x轴 方向朝右 垂直y轴 方向朝下
+        3. 百分比(了解)
+        4. 混写 需要考虑书写顺序
+
+        简写方式: 快捷键 bg+ 按tab键
+        background: 背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;
+    */
+
+    .box {
+        width: 800px;
+        height: 800px;
+        /* background-color: rgba(100, 100, 100, .5);
+        background-image: url("mienv.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: right 100px; */
+        background: rgba(100, 100, 100, .5) url("mienv.jpg") no-repeat scroll right 100px
+    }
+    
+    
+    </style>
+</head>
+<body>
+   <div class="box">111111</div> 
+</body>
+</html>
