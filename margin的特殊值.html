@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>margin的特殊值</title>
+    <style>
+    .box {
+        width: 250px;
+        height: 250px;
+        background-color: lime;
+        /* margin-left: 100px; */
+        /* 
+        auto 自动  可以让一个盒子水平居中 但是垂直不行
+        margin: 0 auto 让盒子本身居中
+        前提条件: 这个盒子必须是块级元素  同时有固定的宽度
+        text-align: center 控制着这个盒子内部的文本或者行内块居中
+        
+         */
+
+         margin: 0 auto;
+         text-align: center;
+    }
+
+    .info {
+        background-color: red;
+        margin: 0 auto;
+        display: block;
+        width: 300px;
+        text-align: center;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box">11111111111111111111111</div>
+    <span class="info">我是行内元素</span>
+</body>
+</html>

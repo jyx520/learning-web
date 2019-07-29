@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding的注意问题</title>
+    <style>
+    .box {
+        /* 行内元素不要写上下的padding值   左右的可以写  一般控制文字的上下 用行高即可*/
+        background-color: red;
+        padding: 30px;
+    }
+
+/* 块级元素宽度的继承 继承的是width的大小 */
+    .father {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        padding: 0 50px;
+    }
+
+    .son {
+        height: 100px;
+        background-color: yellow;
+    }
+    
+    </style>
+</head>
+<body>
+    <span class="box">111111111111111111111</span>22222222222222222
+    <div>3333333333333333</div>
+
+    <hr>
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

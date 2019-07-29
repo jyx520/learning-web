@@ -1,0 +1,21 @@
+内盒模型:  width + padding + border
+
+外盒模型: width + padding + border + margin
+
+
+border 边框
+border: 边框大小  边框样式  边框颜色
+    border: 10px solid red;
+border-方位名词
+    border-top: 10px solid red;
+
+padding 内边距
+
+
+margin 外边距
+
+注意: 
+        行内元素不要写上下的margin 
+        auto 特殊值 可以让一个盒子本身水平居中
+        前提条件: 必须是块元素 同时有宽度
+

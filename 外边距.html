@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距</title>
+    <style>
+    /* 语法: 
+        margin: 值;
+
+        取值基本和padding一致
+            一个值: 四边都有
+            两个值: 上下  左右
+            三个值: 上 左右  下
+            四个值: 上右下左  
+
+            margin也可以用margin-方位名词 去求某一个方向上的margin
+     */
+
+     .box {
+         width: 250px;
+         height: 250px;
+         background-color: pink;
+         display: inline-block;
+         margin: 100px 0 0 100px;
+     }
+
+     .box1 {
+         margin-right: 50px;
+     }
+    
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box"></div>
+</body>
+</html>
