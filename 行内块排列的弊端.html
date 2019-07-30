@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行内块排列的弊端</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+    img {
+        margin-top: 10px;
+    }
+
+    .info {
+        font-size: 30px;
+        display: inline-block;
+        background-color: lime;
+        widows: 200px;
+        height: 200px;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        弊端:
+            1. 行内块元素在低版本浏览器里面不支持 6 7
+            2. 行内块有默认的间距
+            3. 行内块和文字的对齐比较啰嗦
+     -->
+
+
+    <div class="box">
+        <img src="images/3.jpg" alt="">
+        这是一段
+        <div class="info">文字</div>
+    </div>
+</body>
+</html>
