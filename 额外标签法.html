@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>额外标签法</title>
+    <style>
+    /* 
+    额外标签法: css 在初始设计的时候就解决了这个问题
+    如何使用: 在浮动元素的后面添加一个新的块级标签, 这个标签啥事不干 专门 clear:both;
+    弊端: 每次解决这个问题都需要添加一个空盒子
+     */
+    .box {
+        width: 500px;
+        /* overflow: hidden; */
+        border: 1px solid #000;
+    }
+
+    .info {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+    }
+
+    .lw {
+        width: 250px;
+        height: 100px;
+        background-color: lime;
+    }
+
+    .clear {
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="info"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="lw"></div>
+</body>
+</html>

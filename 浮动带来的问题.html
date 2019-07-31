@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动带来的问题</title>
+    <style>
+    .box {
+        width: 500px;
+        /* 定高法 直接给父级元素追加一个固定的高度 但不推荐这样做 不利于后期代码的维护 */
+        height: 500px;
+        background-color: blue;
+        border: 1px solid #000;
+        /* overflow: hidden; */
+    }
+
+/* 浮动元素撑不开父级容器 */
+    .info {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+    }
+
+    /* .lw {
+        width: 250px;
+        height: 100px;
+        background-color: lime;
+    } */
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="info"></div>
+        <div class="info"></div>
+        <div class="info"></div>
+        <div class="info"></div>
+    </div>
+
+    <div class="lw"></div>
+</body>
+</html>

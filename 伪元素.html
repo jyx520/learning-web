@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素</title>
+    <style>
+
+        /* 
+        伪元素本质上是一个元素(标签, 节点)
+        概念: 伪元素是在当前元素的内容的前面或者后面追加一个"虚拟的"标签
+        特点: 由css渲染 所以不会增大页面的开销
+        1. 伪元素默认是行内元素 但是可以进行转换
+        2. content 这个属性不能省略 即使里面没有内容也要写一个空
+        
+        
+         */
+        .box::before{
+            content: '小明';
+            display: block;
+            color: red;
+            font-size: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+        }
+
+        .box::after {
+            content: '18';
+            color: blue; 
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box">的年纪为</div>
+</body>
+</html>

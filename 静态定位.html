@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>静态定位</title>
+    <style>
+        /* 
+        静态定位: 所有的标准流都是静态定位
+        偏移位置对于静态定位来说没有作用
+
+        一般用在将已经做了其他定位的元素在某种情况下回归标准流 配合js使用较多        
+         */
+
+         .box {
+             width: 200px;
+             height: 200px;
+             background-color: red;
+             position: static;
+             left: 500px;
+             top: 500px;
+         }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

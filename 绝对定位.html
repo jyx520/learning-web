@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位</title>
+    <style>
+        .grandfather {
+            width: 300px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* position: relative; */
+        }
+
+        .father {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* position: relative; */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .uncle-wang {
+            width: 200px;
+            height: 200px;
+            border: 1px solid lime;
+            position: relative;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        1. 移动的出发点:
+            从绝对元素开始一直往上级找(直到找到最大的html标签), 在这个过程中, 只要有一个元素(A元素) 是定位(相对, 绝对, 固定) 的任何一个,
+            这个绝对定位的元素就会参照这个A元素进行定位, 并且不会再往上找了, 如果一个都没有, 最终会以html元素定位
+
+        脱标:
+            1. 不占标准流位置
+            2. 不继承父级宽度 而是内容有多大就撑多大 可以强制设置宽高  (不论前身是块级还是行内)
+            3. margin: auto 对于定位元素来说没有作用
+     -->
+
+     <div class="grandfather">
+         <div class="uncle-wang"></div>
+         <div class="father">
+             <div class="brother"></div>
+             <div class="box"></div>
+         </div>
+     </div>
+</body>
+</html>
