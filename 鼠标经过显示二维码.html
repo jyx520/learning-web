@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标经过显示二维码</title>
+    <style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 100px auto;
+        position: relative;
+    }
+
+    .box > img {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        display: none;
+    }
+
+    /* 鼠标经过box 让box 里面的图片显示出来 */
+    .box:hover img {
+        display: block;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/erweima.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>z-index的特殊用法</title>
+    <style>
+    .box,
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+    }
+
+    .box {
+        top: 20px;
+        z-index: 2;
+    }
+    .box1 {
+        background-color: lime;
+    }
+
+    .box1-son {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+        top: -10px;
+        z-index: 3;
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- 上大盒子(box)压住下大盒子(box1) 下大盒子里面的子元素压住山盒子 -->
+
+    <div class="box">1</div>
+    <div class="box1">
+        2
+        <div class="box1-son">2.1</div>
+    </div>
+</body>
+</html>
