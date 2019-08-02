@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片下面留白的问题</title>
+    <style>
+    .box {
+        border: 1px solid #000;
+        line-height: 100px;
+    }
+
+    /* 
+    解决图片下面留白的问题
+    问题的来源: 图片默认和文字的基线对齐
+    解决方法: 
+        将图片转成块级元素
+        将图片设置成不要以基线对齐即可
+     */
+
+     img {
+         border: 1px solid lime;
+         vertical-align: middle;
+     }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/2.jpg" alt="">111
+    </div>
+</body>
+</html>

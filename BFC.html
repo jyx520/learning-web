@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BFC</title>
+    <style>
+    /* BFC 解决外边距上下合并问题 */
+    .box,
+    .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .box1 {
+        background-color: lime;
+        margin-top: 30px;
+    }
+
+    .bfc {
+        overflow: hidden;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bfc">
+            <div class="box1"></div>
+        </div>
+    </div>
+
+    <style>
+        /* BFC 解决外边距嵌套合并问题 */
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* overflow: auto; */
+            float: left;
+
+
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            background-color: red;
+        }
+    
+    
+    </style>
+
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

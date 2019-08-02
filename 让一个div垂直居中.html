@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div 垂直居中</title>
+    <style>
+
+        /* 
+        1. 给父级元素设置text-align:center (水平居中)
+        2. 给父元素设置一个等高的行高
+        3. 给行内块元素设置vertical-align: middle; (让图片以文字的中线对齐)
+        
+        
+         */
+        .box {
+            height: 600px;
+            width: 600px;
+            border: 1px solid #ccc;
+            line-height: 600px;
+            text-align: center;
+        }
+
+        /* 需求:  让info 水平垂直居中 */
+        .info {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="info"></div>
+    </div>
+</body>
+</html>
