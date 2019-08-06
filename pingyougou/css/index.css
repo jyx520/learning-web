@@ -71,8 +71,119 @@ header {
 
 .search-wrapper button i {
     font-size: 26px;
-    color: #fff;
+    color: #fff; 
 }
+
+.cart-wrapper {
+    width: 138px;
+    height: 32px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+}
+
+.cart-wrapper:hover .cart-info {
+    display: block;
+}
+
+.cart-wrapper i {
+    vertical-align: middle;
+}
+
+.cart-wrapper i:nth-child(1) {
+    position: relative;
+    top: -2px;
+}
+
+.cart-wrapper i:nth-child(2) {
+    position: relative;
+    top: -2px;
+}
+
+.count {
+    /* 1. 不建议直接使用宽高 而是让内容撑开 添加上paddding 
+       2. 使用left定位更合适     
+    */
+    padding: 2px 4px;
+    background-color: red;
+    position: absolute;
+    top: -14px;
+    left: 105px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 10px 10px 10px 0;
+}
+
+.cart-info {
+    width: 310px;
+    position: absolute;
+    right: -1px;
+    top: 33px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 2;
+    display: none;
+    line-height: 70px;
+}
+
+.white-box {
+    width: 138px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.search-hot {
+    position: absolute;
+    left: 348px;
+    top: 61px;
+}
+
+.search-hot a {
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+/* main-nav 开始 */
+.pro-classify {
+    width: 210px;
+    height: 46px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 46px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.pro-nav li {
+    float: left;
+    margin-left: 55px;
+    line-height: 46px;
+    height: 46px;
+    font-size: 16px;
+    position: relative;
+}
+
+.pro-nav li .hot {
+    position: absolute;
+    padding: 3px 15px;
+    color: #fff;
+    background-color: #b1191a;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 12px;
+    top: -10px;
+    left: 32px;
+    /* width: 60px; */
+    border-radius: 10px 10px 10px 0;
+}
+
 
 
 
