@@ -184,6 +184,197 @@ header {
     border-radius: 10px 10px 10px 0;
 }
 
+/* 全部商品下拉 */
+.drop-down {
+    width: 210px;
+    height: 465px;
+    /* border: 1px solid red; */
+    background-color: #c81623;
+    /* position: absolute;
+    top: 47px;
+    left: 0; */
+}
+
+
+.drop-down ul {
+    border-left: 1px solid #b1191a;
+    border-top: 1px solid #b1191a;
+}
+
+.drop-down li {
+    height: 31px;
+    line-height: 31px;
+    text-align: left;
+    text-indent: 10px;
+    position: relative;
+}
+
+.drop-down li .iconfont {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.drop-down li:hover {
+    background-color: #fff;
+}
+
+.drop-down li:hover a {
+    color: #666;
+}
+
+.drop-down:hover i {
+    color: #666;
+}
+
+.drop-down li a {
+    color: #fff;
+}
+
+/* banner 区域 */
+.banner {
+    padding-top: 10px;
+}
+
+.carousel {
+    width: 720px;
+    height: 456px;
+    margin-left: 220px;
+    background-color: red;
+    position: relative;
+}
+
+.carousel .arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,.5);
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.carousel .arrow i {
+    font-size: 40px;
+}
+
+.carousel .arrow-l {
+    /* 沿垂直方向旋转180度 */
+    transform: rotateY(180deg);
+}
+
+.carousel .arrow-r {
+    right: 0;
+}
+
+.carousel .points {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+    /* 解决行内块之间的默认的间距 */
+    font-size: 0;
+}
+
+.carousel .points li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel .points li.current {
+    background-color: #fff;
+}
+
+.short-wrapper {
+    width: 250px;
+    height: 456px;
+    /* border: 1px solid red; */
+    /* float: right; */
+}
+
+.short-news {
+    border: 1px solid #ccc;
+    height: 163px;
+}
+
+.short-icons {
+    height: 208px;
+    margin-top: -1px;
+}
+
+.short-news .sn-t {
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dashed #ccc;
+    font-size: 16px;
+}
+
+.short-news .sn-t i {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+
+.short-news .sn-t .more {
+    font-size: 12px;
+}
+
+.short-news .sn-b {
+    padding: 0 15px;
+}
+
+.short-news .sn-b ul {
+    padding: 5px 0;
+}
+
+.short-news .sn-b li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.short-icons table {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.short-icons table .icons {
+    width: 19px;
+    height: 24px;
+    margin: 0 auto;
+    background: url("../images/sprite_03.png") -20px -12px no-repeat;
+}
+
+.short-icons table td {
+    width: 25%;
+    border: 1px solid #ccc;
+}
+
+.short-icons table p {
+    text-align: center;
+    line-height: 2;
+}
+
+.short-ad {
+    margin-top: 9px;
+}
+
+
+
+
+
+
+
+
 
 
 
