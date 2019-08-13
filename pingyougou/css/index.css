@@ -368,6 +368,247 @@ header {
     margin-top: 9px;
 }
 
+/* 今日推荐 */
+.recommend {
+    margin-top: 10px;
+}
+
+.recommend .rec-l {
+    width: 210px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+.recommend .rec-l .clock {
+    width: 57px;
+    height: 57px;
+    margin: 28px auto 0;
+    background: url("../images/clock.png") 0 0 no-repeat;
+}
+
+.recommend .rec-l p {
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff
+}
+
+.recommend .rec-r {
+    width: 990px;
+    height: 163px;
+    /* background-color: red; */
+}
+
+.recommend .rec-r .rec-item {
+    width: 25%;
+    height: 163px;
+    float: left;
+    position: relative;
+}
+
+.rec-line::after {
+    content: "";
+    width: 1px;
+    height: 143px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+/* 猜你喜欢 */
+.guess {
+    margin-top: 20px;
+}
+
+.guess .guess-t {
+    line-height: 40px;
+}
+
+.guess .guess-t strong {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.guess-b {
+    border: 1px solid #ccc;
+}
+
+.guess-b li {
+    float: left;
+    width: 16.66666666666%;
+    height: 233px;
+    overflow: hidden; 
+}
+
+.guess-b li a.text-info {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 16px;
+    display: block;
+}
+
+.guess-b li .price {
+    padding: 0 20px;
+}
+
+.guess-b li .price span {
+    font-size: 18px;
+}
+
+.guess-desc {
+    position: relative;
+}
+
+.gd-line::after {
+    content: "";
+    width: 1px;
+    height: 62px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+/* 楼层模块 */
+.floor {
+    margin-top: 30px;
+} 
+
+.floor .floor-t {
+    border-bottom: 2px solid #c81623;
+    line-height: 36px;
+}
+
+.floor-tit {
+    font-size: 18px;
+}
+
+.floor .floor-t li {
+    float: left;
+}
+
+.floor .floor-t li.line {
+    margin: 0 16px;
+}
+
+.floor-b > div {
+    height: 360px;
+    background-color: lime;
+    float: left;
+}
+
+.floor-b .floor-item1 {
+    width: 210px;
+}
+
+.floor-b .floor-item2 {
+    width: 330px;
+}
+
+.floor-b .floor-item3 {
+    width: 220px;
+}
+
+.floor-b .floor-item4 {
+    width: 220px;
+}
+
+.floor-b .floor-item5 {
+    width: 220px;
+}
+
+.floor-keywords li {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.floor-keywords li a {
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 底部区域 */
+footer {
+    background-color: #f5f5f5;
+    margin-top: 30px;
+}
+
+.footer-h {
+    padding: 30px  0;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer-h li {
+    width: 20%;
+    float: left;
+    height: 49px;
+    position: relative;
+}
+
+.footer-h li p {
+    text-indent: 100px;
+}
+
+.footer-h li .mt-8 {
+    margin-top: 8px;
+}
+
+.footer-icons {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    background: url("../images/icons.png") -253px -3px no-repeat;
+}
+
+.footer-b {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    
+}
+
+.footer-b dl {
+    float: left;
+    width: 16.6666%;
+    
+    text-indent: 55px;
+}
+
+.footer-b dl dt {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+}
+
+.footer-b dl dd {
+    height: 20px;
+    line-height: 20px;
+}
+
+.footer-b dl.help {
+    text-align: center;
+}
+
+.footer-b dl.help dd {
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 
