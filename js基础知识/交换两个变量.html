@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>交换两个变量</title>
+</head>
+<body>
+    <script>
+    var a = 10;
+    var b = 20;
+                    // a    b   temp
+    var temp = a;  //  10   20   10
+        a = b;     //  20   10   10
+        b = temp;                
+    console.log(a, b);
+    
+//不使用临时变量, 交换两个数值变量的值
+    var c = 10;
+    var d = 20;
+
+    c = c + d; //c 30
+    d = c - d; //d 10
+    c = c -d; // c 20
+
+    console.log(c, d);
+    
+    </script>
+</body>
+</html>

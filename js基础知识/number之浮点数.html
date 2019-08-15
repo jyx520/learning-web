@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数字类型</title>
+</head>
+<body>
+    <script>
+    var num = 2.4;
+    //1. 精度丢失(只出现在浮点数 . )
+    // 3.1415926 - 3.1415927
+    var num1 = 0.1;
+    var num2 = 0.2;
+    console.log(num1 + num2);  //0.30000000000000004 并不是想象中的0.3
+    
+    //2. e 表示10的多少次方
+    var num = 5e+3;  //5*10^3
+    console.log(num);
+    
+    var num1 = 4e-2; //4*10^-2
+    console.log(num1);
+    
+    var num2 = 23423423423423423000000000000000000000000000000000000000000000000000000000000000000000
+    console.log(num2);
+
+    //数值范围
+    console.log(Number.MAX_VALUE); //1.7976931348623157e+308
+    console.log(Number.MIN_VALUE); //5e-324
+    console.log(1/0); //Infinity
+    
+    //查看数据类型 typeof =>   能够查看基本数据类型  typeof返回的是string类型
+    var num = 2000;
+    console.log(typeof num);
+    
+    
+    </script>
+</body>
+</html>

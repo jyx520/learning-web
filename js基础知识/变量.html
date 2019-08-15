@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变量</title>
+</head>
+<body>
+    <script>
+        // 变量(重要)
+        // 变量: 可以变化的量
+        // 作用: 存储数据
+        // 声明: var 来声明
+
+        // 如何来使用变量: 
+        // 1. 只声明
+        // 结构 var + 变量名  var age;
+        //(记忆)  只声明, 没有赋值的 => undefined
+
+        var p;
+        console.log(p); //undefined
+
+        //2. 先声明, 再赋值
+        // = : 赋值
+        var p;
+        p = 10;
+        console.log(p);
+        
+        //3. 声明 + 赋值
+        var p = 40;
+        console.log(p);
+
+        //4. 声明多个变量并赋值
+        var a, b; //声明两个变量: a 和 b
+        //=> var a;
+        //=> var b; => 分号 代表这一句结束
+        // console.log(a);
+        // console.log(b);
+
+        var c = 10, d = 20;
+        console.log(c);
+        console.log(d);
+
+        //连着打印
+        console.log(c,d);
+        
+        //5. 不声明, 只赋值(隐式全局变量 不要这么使用 ES6完全放弃了)
+        e = 40;
+        console.log(e);
+
+        //6. 不声明, 不赋值, 直接使用
+        // var num
+        // num = 30;
+        console.log(num);
+        
+        
+
+        var c = 10, d = 20, e = 1;
+        var c = 10;
+            d = 20;
+        console.log(d);
+        
+        
+        
+
+        
+        
+        
+    
+    
+    </script>
+</body>
+</html>
