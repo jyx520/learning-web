@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比较运算符</title>
+</head>
+<body>
+    <script>
+    //比较运算符  > < >= <= == === != !==
+    console.log(2 >= 2); //大于或者 == 
+    
+    // == 等于  === 全等于 恒等于
+    // 内容        内容 + 类型
+
+    console.log(12 == '12');
+    console.log(12 === '12');
+
+    // != 不等于 !== 不全等于
+    // != 掌握, 内容不相等就为真
+
+    console.log(12 != '13');
+    console.log(13 != '12'); //翻译: 13 是否不等于 12
+
+    console.log('12' !== '13'); //翻译: '12' 是否不等于 '13'
+
+    //优先级
+    //1. ()
+    //2. ++
+    //3. 先计算: 算数运算符 + 
+    //4. 再比较: 比较运算符 >= != ==
+    //5. 逻辑运算符 && ||
+
+    var result = ((4 >= 6) || ("人" != "狗")) && (((12 * 2) == 144) && true);
+    //             false   ||    true            &&       false  && true
+    //                                
+    console.log(result);
+
+    console.log("人" != "狗");
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
