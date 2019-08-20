@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>类型转换</title>
+</head>
+<body>
+    <script>
+    //类型转换
+    // => number
+
+    var age = '18';
+    console.log(age);
+
+    //1. 通过构造函数 Number()
+    var num1 = Number(age);
+    console.log(num1);
+    console.log(typeof num1);
+
+    //2. parseInt()  parseFloat() [推荐使用后者]
+    //parseInt() 整数 => 整数 浮点数=> 整数 (小数点以后全部省略)    
+    var str1 = '3.14';
+    console.log(parseInt(str1));
+
+    //parseFloat()  整数=> 整数  浮点数=> 浮整数
+
+    var str2 = '3.14';
+    console.log(parseFloat(str2));
+
+    //3. +(正)   -0  (简单粗暴)
+    var str3 = '123';
+    console.log(str3);
+    console.log(typeof str3);
+
+    var str4 = +'456';
+    console.log(str4);
+    console.log(typeof str4);
+
+    var str5 = '789';
+    console.log(str5 - 0);
+    
+    var str = 'msg';
+    console.log(+str);
+    console.log(typeof +str);
+    console.log(NaN == NaN);
+    console.log(isNaN('abc'));
+    
+    // NaN 不是一个数字 属于数字类型
+    // 非正常值
+    // NaN 的比较, 不等于任何一个值, 也不等于它本身
+    //isNaN()  是否 不是一个数字
+    // true => 不是一个数字
+    // false => 是一个数字        
+    
+    
+    
+        
+    
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>转换为布尔类型</title>
+</head>
+<body>
+    <script>
+    //1. 记忆哪些转化为false
+    //没有值的 => false
+    //非正常值 => false
+
+    //2. 五大数据类型
+    //数字类型 0
+    //字符串 ''
+    //undefined
+    //null
+    //NaN
+
+    console.log( Boolean(0));
+    console.log( Boolean(''));
+    console.log( Boolean(undefined));
+    console.log( Boolean(null));
+    console.log( Boolean(NaN));
+
+    //注意点: 
+    console.log(Boolean('false')); //true
+
+    //2. !! 取两次非
+    console.log(!!123); //true
+    console.log(Boolean(123)); //true
+    
+    
+
+    
+    
+    
+    </script>
+</body>
+</html>
