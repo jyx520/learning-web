@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组的赋值</title>
+</head>
+<body>
+    <script>
+    var arr = ['a', 'b'];
+    console.log(arr);
+
+    //赋值
+    //结构: 数组名[下标] = 值
+
+    //1. 下标存在的情况 => 修改 / 覆盖
+    // 下标范围: 0~数组.length-1 / 1
+    arr[0] = 'c';
+    arr[1] = 'd'; 
+    arr[arr.length-1] = 'e'; 
+
+    //2. 下标不存在的情况 => 增加
+    arr[6] = 'h'; //不推荐这么写
+
+    
+    arr[2] = 'f';
+    arr[3] = 'g';
+    console.log(arr);
+
+    arr[arr.length]
+    
+    
+    
+    
+    </script>
+</body>
+</html>
