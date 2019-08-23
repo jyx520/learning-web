@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取页面元素</title>
+</head>
+<body>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div id="four">4</div>
+    <div id="box">
+        <div>哈哈</div>
+        <div>呵呵</div>
+    </div>
+    <script>
+    //批量获取页面上指定的标签
+    //getElementsByTagName('标签名')   //通过标签名获取多个元素
+    //返回一个伪数组 包含了符合条件的所有元素
+
+    // var result = document.getElementsByTagName('div');
+    // console.log(result);
+
+    // var result = document.getElementsByTagName('span');
+    //如果找不到就返回一个空的伪数组
+    // console.log(result);
+
+    //获取指定的元素
+    // getElementById('id名') 通过id获取元素
+    // 返回的就是那个对应的元素
+
+    // var result = document.getElementById('four');
+    // console.log(result);
+    
+
+    // var result = document.getElementById('one');
+    // //如果找不到就返回null
+    // console.log(result);
+
+    // result = document.getElementsByTagName('div');
+    // // 在整个页面的范围找
+    // console.log(result);
+
+    var box = document.getElementById('box');
+    console.log(box.getElementsByTagName('div')); //在元素的范围中找
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
