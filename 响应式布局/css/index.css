@@ -96,6 +96,11 @@
 
 }
 
+.nav-container-extended {
+    top: 0;
+    height: 201px;
+}
+
 /* slider */
 .slider-container {
     margin-top: 20px;
