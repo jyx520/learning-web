@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    font-size: 12px;
+    font: 12px;
     color: #686868;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
@@ -22,14 +22,16 @@ input {
     background: none;
     outline: none;
 }
-[data-dpr="2"] body,
-[data-dpr="2"] a,
-[data-dpr="2"] input {
+
+[data-dpr = "2"] body,
+[data-dpr = "2"] a,
+[data-dpr = "2"] input{
     font-size: 24px;
 }
-[data-dpr="3"] body,
-[data-dpr="3"] a,
-[data-dpr="3"] input {
+
+[data-dpr = "3"] body,
+[data-dpr = "3"] a,
+[data-dpr = "3"] input{
     font-size: 36px;
 }
 
@@ -38,8 +40,7 @@ li {
 }
 
 img {
-    vertical-align: top;
-    border: none;
     width: 100%;
+    border: none;
+    vertical-align: top;
 }
-

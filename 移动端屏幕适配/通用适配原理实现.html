@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>通用适配原理实现</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-container {
+            width: 100%;
+            height: 2.5rem;
+            background-color: rgba(222, 24, 27, 0.9);
+            /* 1px 边框 */
+            border-bottom: 1px solid #000;
+        }
+    </style>
+    <script>
+        (function setRemUnit() {
+            'use strict';
+            // dpr -> scale=1/dpr
+            var docEl = document.documentElement;
+            var viewportEl = document.querySelector('meta[name="viewport"]');
+            var dpr = window.devicePixelRatio || 1;
+            var maxWidth = 540;
+            var minWidth = 320;
+
+            dpr = dpr >= 3 ? 3 : (dpr >= 2 ? 2 : 1);
+
+            docEl.setAttribute('data-dpr', dpr);
+
+            var scale = 1 / dpr;
+            var content = 'meta name="viewport" content="width=device-width, initial-scale=' + scale + ', maximum-scale=1, minimum-scale=' + scale + ', user-scalable=no';
+            if (viewportEl) {
+                viewportEl.setAttribute('content', content);
+            } else {
+                viewportEl = document.createElement('meta');
+                viewportEl.setAttribute('name', 'viewport');
+                viewportEl.setAttribute('content', content);
+                document.head.appendChild(viewportEl);
+            }
+
+
+
+            setRemUnit();
+
+            window.addEventListener('resize', setRemUnit);
+            function setRemUnit() {
+                var ratio = 18.75;
+                var viewWidth = docEl.getBoundingClientRect().width || window.innerWidth;
+                if (maxWidth && (viewWidth / dpr > maxWidth)) {
+                    viewWidth = maxWidth * dpr;
+                } else {
+                    viewWidth = minWidth * dpr;
+                }
+                docEl.style.fontSize = viewWidth / ratio + 'px';
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="header-container"></header>
+</body>
+
+</html>

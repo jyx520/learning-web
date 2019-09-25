@@ -1,5 +1,6 @@
 //移动端简单屏幕适配
 (function () {
+    'use strict';
     // 1rem  = viewWidth/18.75
     setRemUnit();
     window.addEventListener('resize', setRemUnit);
